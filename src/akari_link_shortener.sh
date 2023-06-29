@@ -5,6 +5,8 @@ second_api="https://api.waa.ai/v2"
 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/20100101 Firefox/108.0"
 
 function login() {
+	# 1 - username: (string): <username>
+ 	# 2 - password: (string): <password>
 	response=$(curl --request POST \
 		--url "$first_api/auth/login" \
 		--user-agent "$user_agent" \
